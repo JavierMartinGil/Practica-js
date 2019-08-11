@@ -7,6 +7,12 @@ div.wrapper{
     padding: 20px 100px;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
 div#contenido{
     padding: 15px;
     background-color: white;
@@ -39,7 +45,7 @@ header #navbar {
     margin: 10px 0;
     background-color: #545E75;
     display: flex;
-       
+    justify-content: space-between;       
 }
 
 header nav li{
@@ -107,6 +113,12 @@ div.comentarios {
 
 .post{
     margin: 10px 0;
+}
+
+.sidebar h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
 
