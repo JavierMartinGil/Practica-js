@@ -121,4 +121,121 @@ div.comentarios {
     text-align: center;
 }
 
+.mode button {
+    margin: 5px;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid #545E75;
+    color: #545e75;
+    transition: .5s;
+}
 
+.mode button:hover{
+    background-color: rgb(232, 233, 255);
+    cursor: pointer;
+}
+
+.sidebar input {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;   
+    border: 1px solid #545e75; 
+}
+
+.sidebar input[type=submit]{
+    color: white;
+    background-color: #545E75;
+    transition: .5s;
+}
+
+.sidebar input[type=submit]:hover{
+    background-color: #348AA7;
+    border: 1px solid #348AA7;
+}
+
+footer {
+    background-color: #348aa7;
+    padding: 10px;
+    color: white;
+}
+
+a.subir{
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+@media (max-width: 1300px){
+    div.wrapper {
+        padding: 20px 50px;
+    }
+
+    .titulopost h2 { 
+        min-width: 100px; 
+        max-width: 100%; 
+        width: 100%;
+    }
+
+    div.comentarios {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    .titulo h1 {
+        float: none;
+       text-align: center;
+    }
+
+    #search {
+        float: none;
+        padding: 15px 5px;
+        color: darkgray;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    ul {
+       width: 100%;
+    }
+
+    header nav li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    header #navbar {
+        display: block;        
+    }
+
+    .mode {
+       text-align: center;
+    }
+
+    
+}
+
+@media (max-width: 500px){
+    .titulo h1 {
+      font-size: 30px;
+    }
+
+
+div.principal {
+    width: 100%;
+    padding: .5em;
+}
+
+div.post .sidebar {
+    width: 100%;
+    padding: 1em;
+}
+
+a.subir {
+    float: none;
+}
+
+}

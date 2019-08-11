@@ -22,6 +22,11 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
   let contenido = document.getElementById('contenido');
   let navbar = document.getElementById('navbar');
   let navitem = document.getElementsByClassName('navitem');
+  let parrafos = document.getElementsByTagName('p');
+  let titulos = document.getElementsByTagName('h2');
+  let titulosh4 = document.getElementsByTagName('h4');
+  let label = document.getElementsByTagName('label');
+  let wrapper = document.getElementsByClassName('wrapper');
 
   botonNoche.addEventListener('click', modonoche);
   botonDia.addEventListener('click', mododia);
@@ -32,8 +37,25 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
     for (nav of navitem) {
       nav.style.color = "#333";
     }
+    for (parrafo of parrafos) {
+      parrafo.style.color = "white";
+    }
     
-    
+    for (titulo of titulos) {
+      titulo.style.color = "white";
+    }
+
+    for (titulo of titulosh4) {
+      titulo.style.color = "white";
+    }
+
+    for (lab of label) {
+      lab.style.color = "white";
+    }
+
+    for (wrap of wrapper) {
+      wrap.style.backgroundColor = "black";
+    }
   }
 
   function mododia(){
@@ -43,7 +65,36 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
       nav.style.color = "white";
     }
 
+    for (parrafo of parrafos) {
+      parrafo.style.color = "black";
+    }
+
+    for (titulo of titulos) {
+      titulo.style.color = "black";
+    }
+
+    for (titulo of titulosh4) {
+      titulo.style.color = "black";
+    }
+
+    for (lab of label) {
+      lab.style.color = "black";
+    }
+
+    for (wrap of wrapper) {
+      wrap.style.backgroundColor = "lightgrey";
+    }
+
   }
+
+  // Scroll
+
+  $('.subir').click(function(e){
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop:0
+    },800)
+  })
 
 
 
