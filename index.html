@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Udemy</title>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tinyslide.css">
+   
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div id="contenido">
+            <header>
+                <div class="titulo">
+                    <h1>Practicando JS</h1>
+                    <input type="search" name="" id="search" value="¿Qué quieres buscar?">
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="" class="navitem">Inicio</a></li>
+                        <li><a href="" class="navitem">Calculadora</a></li>
+                        <li><a href="" class="navitem">Reloj</a></li>
+                        <li><a href="" class="navitem">Juego</a></li>
+                        <li><a href="" class="navitem">Contacto</a></li>
+                    </ul>
+                    <div>
+                        <button id="noche">Modo noche</button>
+                        <button id="dia">Modo dia</button>
+                    </div>
+                </nav>
+
+            </header>
+            <main>
+                <div class="slider">
+                    <section id="tiny" class="tinyslide">
+                        <aside class="slides">
+                            <figure>
+                                <img src="img/slide1.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="img/slide2.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="img/slide3.jpg" alt="">
+                            </figure>
+                        </aside>
+                    </section>    
+                </div>
+                <div class="post">
+                    <div class="principal" id="feed">
+                        <!-- <div class="titulopost"><p class="comentarios">45 comentarios</p>
+                            <h2>Loren Ipsum</h2>
+                            <h5>fecha autor etc</h5>
+                            
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde aut facilis et praesentium cum. Deleniti voluptatum rerum, distinctio repellat totam accusantium officia quam. Libero sit repellat voluptatem animi inventore.</p>
+                        </div> -->
+                    </div>
+                    <aside class="sidebar">
+                        <h4>Quien soy</h4>
+                    </aside>
+                </div>
+            </main>
+
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/tinyslide.js"></script>
+    <script>
+    var tiny = $('#tiny').tiny().data('api_tiny');
+    </script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

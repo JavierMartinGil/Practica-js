@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.wrapper{
+    background-color: lightgrey;
+    padding: 20px 100px;
+}
+
+div#contenido{
+    padding: 15px;
+    background-color: white;
+}
+
+.titulo::after{
+    content: "";
+    display: block;
+   clear: both;
+}
+
+.titulo h1{
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    background-color: #545E75;
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold; 
+}
+
+#search{
+    float: right;
+    padding: 15px 5px;
+    color: darkgray;
+    
+}
+
+header #navbar {
+    margin: 10px 0;
+    background-color: #545E75;
+    display: flex;
+       
+}
+
+header nav li{
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+header nav li a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header nav li a:hover{
+    color: rgb(211, 211, 211);
+}
+
+div.post{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.principal{
+    width: 66%;
+    padding: .5em;
+}
+
+div.post .sidebar{
+    width: 33%;
+    padding: 1em;
+}
+
+div.comentarios {
+   
+    padding: 15px;
+    background-color: #348AA7;
+    width: 9em;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+
+.titulopost h2 {
+    font-weight: bold;
+    font-size: 2.2em;
+    min-width: 500px;
+    max-width: 70%;
+    width: 550px;
+}
+
+.post h5 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #bababa;
+    
+}
+
+.titulopost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post{
+    margin: 10px 0;
+}
+
+
